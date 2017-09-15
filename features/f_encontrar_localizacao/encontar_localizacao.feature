@@ -4,14 +4,11 @@ Funcionalidade: Encontrar localização
   Como oficial de justiça, 
   Eu quero identificar minha localização para poder verificá-la antes que seja informada à central de mandados
   
-  Cenário: Acessar aplicação com GPS desativado
-    Dado que o GPS do dispositivo está desabilitado
-    Quando realizar o login na aplicação
+  Cenário: Encontrar localização com o GPS desabilitado
+    Dado que o GPS do dispositivo está habilitado
+    Quando realizar o login na aplicação permitindo acesso à localização do dispositivo móvel
+    E o oficial de justiça desabilitar o GPS
     Então deve ser exibida a mensagem "Por favor, ative o gps e tente novamente."
-  
-  Cenário: Verificar alerta pedindo permissao de acesso a localização
-    Dado que o usuário realizou o login na aplicação
-    Então deve ser apresentada alerta pedindo autorização de acesso à localização do usuário
 
   Cenário: Acessar aplicação sem permissão de acesso á localização
     Dado que o usuário logado tenha recusado a autorização de acesso a localização no login
