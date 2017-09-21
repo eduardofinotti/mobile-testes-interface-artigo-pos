@@ -2,7 +2,7 @@
 @localizacao @funcionalidade_basica
 Funcionalidade: Listagem de novos mandados
   Como oficial de justiça, 
-  Eu quero visualizar minha listab de mandados a serem cumpridos
+  Eu quero visualizar minha lista de mandados a serem cumpridos
   
   Cenário: Visualizar lista sem nenhum novo mandado (lista vazia)
     Dado que o oficial de justiça está logado

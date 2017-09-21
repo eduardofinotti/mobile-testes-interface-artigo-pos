@@ -1,8 +1,8 @@
 #language: pt
 @login @funcionalidade_basica
-Funcionalidade: Entrar na aplicação
+Funcionalidade: Sair da aplicação
   Como um oficial de justiça
-  Eu quero poder acessar a aplicação
+  Eu quero poder fazer logoff na aplicação
 
   @login_valido @basico
   Cenário: Acessar aplicação com dados válidos
