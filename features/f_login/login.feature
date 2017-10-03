@@ -1,10 +1,10 @@
 #language: pt
 @login @funcionalidade_basica
 Funcionalidade: Entrar na aplicação
-  Como um oficial de justiça
-  Eu quero poder acessar a aplicação
+  Como um oficial de justiça 
+  Eu quero me logar no SAJ/OJO Mobile para poder acessar o aplicativo e ter segurança de que, sem minhas informações de usuário e senha, outras pessoas não conseguem acessá-lo.
 
-  Cenário: Acessar aplicação com usuário inválido
+  Cenário: Acessar aplicação com usuário inválido 
     Dado que o oficial de justiça esteja na tela de login
     E preencho o campo 'Usuário SAJ' com usuário inválido
     Quando clicar no botão 'Entrar'
@@ -25,8 +25,8 @@ Funcionalidade: Entrar na aplicação
     Dado que o GPS do dispositivo está desabilitado
     Quando realizar o login na aplicação
     Então deve ser exibida a mensagem "Por favor, ative o gps e tente novamente."
-    
-  Cenário: Verificar alerta pedindo permissao de acesso a localização
+
+  Cenário: Verificar alerta pedindo permissão de acesso a localização
     Dado que o usuário realizou o login na aplicação
     Então deve ser apresentada alerta pedindo autorização de acesso à localização do usuário
 

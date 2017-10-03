@@ -1,8 +1,8 @@
 #language: pt
 @timeline @funcionalidade_basica
-Funcionalidade: Exibiçao da timeline do Oficial de Justiça
-  Como Oficial de Justiça, 
-  Eu quero visualizar minha timeline de check-ins para visualizar todos os meus mandados concluídos
+Funcionalidade: Listagem de mandados já finalizados
+  Como Oficial de Justiça 
+  Eu quero visualizar minha timeline de check-ins para confirmar que os endereços em que cumpri diligências foram corretamente informados para a central de mandados.
 
   Cenário: Visualizar timeline sem nenhum check-in realizado
     Dado que o oficial de justiça está logado
