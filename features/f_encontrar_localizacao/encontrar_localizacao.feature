@@ -15,11 +15,13 @@ Funcionalidade: Encontrar localização
     Dado que o GPS do dispositivo está habilitado
     Quando realizar o login na aplicação permitindo acesso à localização do dispositivo móvel
     E o oficial de justiça está sem acesso a internet
+    E o ofical de justiça acessa a tela de encontrar localização 
     Então deve ser apresentada a tela com o endereço onde Oficial de justiça se encontra 
     E deve apresentar o botão Enviar localização habilitado
 
   Cenário: Oficial de justiça encontra localização para enviar
-    Dado GPS do dispositivo móvel está habilitado 
+    Dado GPS do dispositivo móvel está habilitado
+    E o dispositivo possui acesso a internet
     Quando realizar o login na aplicação permitindo acesso à localização do dispositivo móvel
     E o oficial de justiça pressionar o botão de econtrar localização
     Então deve ser apresentada a tela com o endereço onde Oficial de justiça se encontra 
