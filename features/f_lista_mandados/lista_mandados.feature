@@ -1,5 +1,5 @@
 #language: pt
-@localizacao @funcionalidade_basica
+@localizacao
 Funcionalidade: Listagem de novos mandados
   Como oficial de justiça, 
   Eu quero visualizar minha lista de mandados aguardando cumprimento para poder decidir quais irei cumprir naquele dia

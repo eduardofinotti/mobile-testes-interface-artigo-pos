@@ -20,6 +20,10 @@ class Actions
     $driver.wait { $driver.find_element(xpath: xpath)}
   end
 
+  def waitElementByXpathAndClick(xpath)
+    $driver.wait { $driver.find_element(xpath: xpath).click}
+  end
+
   def waitElementAndClick(id)
     $driver.wait { $driver.find_element(id: id).click}
   end

@@ -1,5 +1,5 @@
 #language: pt
-@localizacao @funcionalidade_basica
+@localizacao 
 Funcionalidade: Encontrar localização
   Como oficial de justiça, 
   Eu quero identificar minha localização para poder verificá-la antes que seja informada à central de mandados

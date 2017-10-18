@@ -1,5 +1,5 @@
 #language: pt
-@localizacao @funcionalidade_basica
+@localizacao
 Funcionalidade: Listagem de mandados em progresso
   Como oficial de justiça, 
   Eu quero visualizar minha lista de mandados que estão em progresso para poder decidir quando irei cumpri-los
