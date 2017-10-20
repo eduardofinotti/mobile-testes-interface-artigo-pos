@@ -41,6 +41,7 @@ class LoginActions
     if @header_screen_object.getUserName != "Oficial O"
       fail("Erro de validaçao")
     end
+    
   end
 
 
