@@ -1,5 +1,5 @@
 #language: pt
-@salvar_localizacao @funcionalidade_basica @salvar
+@salvar_localizacao
 Funcionalidade: Salvar localização do Oficial de Justiça
   Como oficial de justiça,
   Eu quero salvar minha localização no dispositivo para enviar para o OJO-Web para poder comprovar que estive no endereço onde a diligência foi cumprida.

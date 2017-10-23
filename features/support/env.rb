@@ -43,7 +43,7 @@ case platform
     raise("Not supported platform #{ENV['PN']}")
 end
 
-Appium::Driver.new(caps)
+Appium::Driver.new(caps, true)
 Appium.promote_appium_methods AppiumWorld
 
 # world settings
@@ -52,24 +52,4 @@ World(Test::Unit::Assertions)
 World do
   AppiumWorld.new
   AssertExtension.new
-end
-
-
-#cucumber setup
-Before('@wip, @bug') do
-  if $ENV == Android
-    pending
-  end
-end
-
-Before('@wip_android') do
-  if $ENV == Android
-    pending
-  end
-end
-
-Before('@wip_ios') do
-  if $ENV == IOS
-    pending
-  end
 end

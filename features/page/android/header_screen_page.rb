@@ -9,9 +9,10 @@ module Android
     def initialize(driver)
       @driver = driver 
       
-      user_name = @driver.id("NameLabel")
-
-      super(user_name)
+      user_name = @driver.id('NameLabel')
+      botao_logout = @driver.id('LogoutButton')
+    
+      super(user_name, botao_logout)
     end
     
     def error_message

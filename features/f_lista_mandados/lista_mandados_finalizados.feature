@@ -1,5 +1,5 @@
 #language: pt
-@timeline @funcionalidade_basica
+@timeline
 Funcionalidade: Listagem de mandados já finalizados
   Como Oficial de Justiça 
   Eu quero visualizar minha timeline de check-ins para confirmar que os endereços em que cumpri diligências foram corretamente informados para a central de mandados.
