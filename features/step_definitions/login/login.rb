@@ -1,3 +1,19 @@
+Dado("que o usuário esteja na tela de login") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Dado("informa um usuário e senha válidos") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Então("mostra a tela principal com o nome do usuário logado {string}") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+
+#============================================#
+
+
 Dado(/^que o oficial de justiça esteja na tela de login$/) do
   LoginActions.new.verificaSeTelaLogin(false)
   @login_screen_object = $ENV::LoginScreenElement.new($driver) 

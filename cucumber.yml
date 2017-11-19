@@ -1,1 +1,1 @@
-run: --tags @login --format html --out report.html --format pretty --tags ~@ignore
+run: --tags @login --format html --out report.html --format pretty 

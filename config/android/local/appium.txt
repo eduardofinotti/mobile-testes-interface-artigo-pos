@@ -1,11 +1,11 @@
 [caps]
 platformName = "Android"
-deviceName = "56e76b47"
+deviceName = "0010180973"
 app = "app/ojo.apk"
 appPackage = "com.softplan.ojo"
 appActivity = "host.exp.exponent.LauncherActivity"
 newCommandTimeout = 3600
-noReset=true
+noReset=false
 [appium_lib]
 wait = 20
 debug = "true"
