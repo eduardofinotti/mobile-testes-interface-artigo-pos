@@ -1,4 +1,5 @@
 #language: pt
+
 @login
 Funcionalidade: Entrar na aplicação
   Como um usuário 
@@ -10,3 +11,9 @@ Funcionalidade: Entrar na aplicação
     E informa um usuário e senha válidos 
     Quando clicar no botão 'Entrar'  
     Então mostra a tela principal com o nome do usuário logado "Oficial O"
+
+  Cenário: Acessar aplicação com dados inválidos
+    Dado que o usuário esteja na tela de login
+    E informa um usuário e senha inválidos 
+    Quando clicar no botão 'Entrar'  
+    Então mostra mensagem "Senha ou usuário inválido."  
