@@ -7,13 +7,13 @@ Funcionalidade: Entrar na aplicação
   Para poder acessar o aplicativo
 
   Cenário: Acessar aplicação com dados válidos
-    Dado que o usuário esteja na tela de login
-    E informa um usuário e senha válidos 
+    Dado que é informado um usuário e senha válidos 
     Quando clicar no botão 'Entrar'  
     Então mostra a tela principal com o nome do usuário logado "Oficial O"
 
   Cenário: Acessar aplicação com dados inválidos
-    Dado que o usuário esteja na tela de login
-    E informa um usuário e senha inválidos 
+    Dado que é informado um usuário e senha inválidos
     Quando clicar no botão 'Entrar'  
     Então mostra mensagem "Senha ou usuário inválido."  
+
+    

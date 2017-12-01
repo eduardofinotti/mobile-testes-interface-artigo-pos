@@ -10,15 +10,11 @@ module Android
       @driver = driver 
       
       user_name = @driver.id('NameLabel')
-      botao_logout = @driver.id('LogoutButton')
     
-      super(user_name, botao_logout)
-    end
-    
-    def error_message
-      @driver.id('login_error')
+      super(user_name)
     end
     
   end 
 
 end
+

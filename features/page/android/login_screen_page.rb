@@ -13,10 +13,9 @@ module Android
       
       super(login_user, login_password, login_button)
     end
-    
-    def error_message
-      @driver.id('login_error')
-    end
-    
+  
   end
+
 end
+
+

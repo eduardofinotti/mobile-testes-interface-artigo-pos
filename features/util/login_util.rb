@@ -7,25 +7,16 @@ class LoginActions
       elemento = $driver.find_element(:accessibility_id, 'NameLabel').displayed?
   
       if elemento == true
-        p "Não está na tela de login!"
         @header_screen_object = $ENV::HeaderScreenElement.new($driver)
-        @header_screen_object.clickLogout
-        p "clicou logout"
-  
+        @header_screen_object.clickLogout  
         $action.waitElementAndClick("android:id/button1")
-        p "Saiu da aplicação!"
       end
   
     rescue  
-      p "Está na tela de login!"
-  
     end
 
     if entra == true
-      p "entrou entra true"
-
       LoginActions.new.loga
-
     end
 
   end
@@ -46,25 +37,32 @@ class LoginActions
 
 
   def preencheCamposLogin(login_screen_object)
+    #@login_screen_object = $ENV::LoginScreenElement.new($driver) 
     login_screen_object.send_login_user('oficial')
     login_screen_object.send_login_password('132')
   end  
 
   def entrarPermitindoLocalizacao(login_screen_object)
     login_screen_object.click_login_button
+    elemento = $driver.find_element(:id, 'com.android.packageinstaller:id/permission_allow_button').displayed?
+    $action.waitElementAndClick("com.android.packageinstaller:id/permission_allow_button")
+  end
 
-    begin  
-      elemento = $driver.find_element(:id, 'com.android.packageinstaller:id/permission_allow_button').displayed?
+  # def entrarPermitindoLocalizacao(login_screen_object)
+  #   login_screen_object.click_login_button
 
-      if elemento == true
-        $action.waitElementAndClick("com.android.packageinstaller:id/permission_allow_button")
-      end
+  #   begin  
+  #     elemento = $driver.find_element(:id, 'com.android.packageinstaller:id/permission_allow_button').displayed?
 
-    rescue
-      p "Não pediu permissão!"
-    end  
+  #     if elemento == true
+  #       $action.waitElementAndClick("com.android.packageinstaller:id/permission_allow_button")
+  #     end
 
-  end 
+  #   rescue
+  #     p "Não pediu permissão!"
+  #   end  
+
+  # end 
 
    def entrarNaoPermitindoLocalizacao(login_screen_object)
     login_screen_object.click_login_button    
